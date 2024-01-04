@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            width: 6rem;
+            display: block;
+        }
+
+        .links {
+            display: flex;
+            justify-content: end;
+        }
+
+        .links a {
+            padding: 5px 10px;
+            font-size: 2.5vh;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .navbar {
+            background-color: brown;
+            width: 100;
+        }
+
+        .hero {
+            background-image: url('./micky.jpg');
+            height: 90vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: -999 !important;
+
+
+        }
+
+        .leader {
+            background-image: url('./micky.jpg');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: -2;
+        }
+
+        .leader::before {
+            content: '';
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            /* Apply linear gradient with opacity */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .hero::before {
+            content: '';
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -3 !important;
+        }
+
+        .col-md-6.content-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            /* position: relative; */
+            z-index: 3 !important;
+        }
+
+        /* Optional: Add some padding or margin to the content for better spacing */
+        .col-md-6.content-center h1,
+        .col-md-6.content-center p,
+        .col-md-6.content-center .Started {
+            margin-bottom: 20px;
+        }
+
+        .Started {
+            z-index: 5;
+            position: relative;
+            /* Add position relative */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="--bs-gutter-x:0rem !important;">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./lion-logo-transparent-1.png" alt="">
+            </div>
+            <div class="links">
+                <a href="" class="text-white">Home</a>
+                <a href="" class="text-white">About</a>
+                <a href="" class="text-white">Service</a>
+                <a href="" class="text-white">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- hero-section -->
+    <div class="hero">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6 content-center">
+                    <h1 class="text-white text-start">Service You <br> Since 1997</h1>
+                    <p class="text-white text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Blanditiis natus ipsum similique quasi dolor architecto reiciendis delectus sunt, sint dolore,
+                        cupiditate facilis! Sequi expedita ad adipisci, at in suscipit facere.</p>
+                    <div class="Started">
+                        <button type="button" class="btn btn-outline-primary start">Primary</button>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-6 content-center align-items-center"><img style="height: 13rem;" src="./lion-logo-transparent-1.png" alt=""></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- /////////// cards section /////////// -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <span>Lorem ipsum dolor sit amet.</span>
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <div class="col-md-6 mt-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum temporibus et animi sequi vitae
+                    ipsam perferendis asperiores voluptatibus quos similique obcaecati totam deserunt sit quis, unde
+                    error? Laudantium, qui obcaecati.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <div class="card bg-dark text-white m-auto" style="width: 18rem;">
+                    <img src="/lion-logo-transparent-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <div class="card bg-dark text-white m-auto" style="width: 18rem;">
+                    <img src="/lion-logo-transparent-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5">
+                <div class="card bg-dark text-white m-auto" style="width: 18rem;">
+                    <img src="/lion-logo-transparent-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ////////////last section ////////////// -->
+    <div class="container-fluid mt-5 ">
+        <div class="leader">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 text-white content-center">
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tenetur sit esse eius eum
+                        distinctio ab velit explicabo voluptates voluptatibus ducimus exercitationem quaerat accusamus
+                        facilis dolorem aliquam aperiam quasi odio.</p>
+                    <div class="btn">
+                        <button class="btn btn-light">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav" id="section-one">
+            <h2>Sunrise</h2>
+            <div class="links">
+                <a href="#section-one" onclick="scrollToSection('section-one')">Home</a>
+                <a href="#section-three" onclick="scrollToSection('section-three')">About</a>
+                <a href="#section-five" onclick="scrollToSection('section-five')">Services</a>
+                <a href="./contact.html">Contact</a>
+                <a href="">Social media</a>
+                <i class="ri-menu-fill"></i>
+            </div>
+        </div>
+        <!-- hero section -->
+        <div class="hero">
+            <div class="section-one">
+                <h2>My Name Is Altaf Pinjari And I Am <span>I Am Web Developer</span> </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dignissimos et necessitatibus
+                    dolor, deleniti reiciendis, tenetur voluptatum nesciunt doloremque quibusdam perspiciatis
+                    laboriosam, ducimus dicta esse. Suscipit at sit cupiditate odit!</p>
+                <div class="btn">
+                    <button>Get Started</button>
+                </div>
+
+            </div>
+            <div id="section-two" class="section-two">
+                <img class="img1" src="./web.webp" alt="">
+            </div>
+        </div>
+        <h2 class="about">About Us</h2>
+        <div class="about-us" id="section-three">
+            <div class="section-three">
+                <img class="img1" src="./3d-isometric-flat-conceptual-illustration-260nw-2387547471.jpg" alt="">
+            </div>
+            <div class="section-four">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dignissimos et necessitatibus
+                    dolor, deleniti reiciendis, tenetur voluptatum nesciunt doloremque quibusdam perspiciatis
+                    laboriosam, ducimus dicta esse. Suscipit at sit cupiditate odit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dignissimos et necessitatibus
+                    dolor, deleniti reiciendis, tenetur voluptatum nesciunt doloremque quibusdam perspiciatis
+                    laboriosam, ducimus dicta esse. Suscipit at sit cupiditate odit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="services" id="section-five">
+            <h2>Our Services</h2>
+            <div class="cards-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
